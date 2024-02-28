@@ -1,10 +1,18 @@
-
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>REMISIÓN</title>
 		<link rel="stylesheet" href="https://fredyortegon30.github.io/invoice/style.css">
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<style>
+			body {
+				writing-mode: vertical-rl;
+				-webkit-writing-mode: vertical-rl;
+				-ms-writing-mode: vertical-rl;
+				writing-mode: tb-rl;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -15,18 +23,16 @@
 				<p>Pereira</p>
 			</address>
 
-<div style="float: right;">
-    <img alt="" src="https://acortar.link/caSNRS" style="width: 100px; height: 100px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
-</div>
-
-
+			<div style="float: right;">
+				<img alt="" src="https://acortar.link/caSNRS" style="width: 100px; height: 100px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+			</div>
 		</header>
 		<article>
 			<h1>Recipient</h1>
 			<address>
 				<p>&lt;&lt;[id_cliente].[Nombre_cliente]&gt;&gt;<br>-</p>
-                <p class="small-text"><br>Email: &lt;&lt;[id_cliente].[Email]&gt;&gt;</p>
-                <p class="small-text">Cel:&lt;&lt;[id_cliente].[Celular]&gt;&gt;</p>
+				<p class="small-text"><br>Email: &lt;&lt;[id_cliente].[Email]&gt;&gt;</p>
+				<p class="small-text">Cel:&lt;&lt;[id_cliente].[Celular]&gt;&gt;</p>
 			</address>
 			<table class="meta">
 				<tr>
@@ -53,15 +59,15 @@
 					</tr>
 				</thead>
 				<tbody>
-				<p><span>&lt;&lt;Start: SELECT(DETALLE_VENTAS[id_detalle],[id_encabezado_venta]=[id_encabezado]) &gt;&gt;</span></p>
+					<p><span>&lt;&lt;Start: SELECT(DETALLE_VENTAS[id_detalle],[id_encabezado_venta]=[id_encabezado]) &gt;&gt;</span></p>
 					<tr>
 						<td><a class="cut">-</a>&lt;&lt;[id_producto].[Nombre de producto]&gt;&gt;</td>
 						<td><span></span></td>
-				        <td><span>&lt;&lt;[Valor_unitario]&gt;&gt;</span></td>
+						<td><span>&lt;&lt;[Valor_unitario]&gt;&gt;</span></td>
 						<td><span>&lt;&lt;[Cantidad]&gt;&gt;</span></td>
 						<td><span>&lt;&lt;[Subtotal]&gt;&gt;</span></td>
 					</tr>
-				<p><span>&lt;&lt; end &gt;&gt;</span></p>
+					<p><span>&lt;&lt; end &gt;&gt;</span></p>
 				</tbody>
 			</table>
 			<a class="add">+</a>
